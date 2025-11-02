@@ -1,0 +1,17 @@
+
+[tool.poetry]
+name = "{{ cookiecutter.project_slug }}"
+version = "0.1.0"
+description = "{{ cookiecutter.description }}"
+authors = ["{{ cookiecutter.author_name }} <seu@email.com>"]
+packages = [{ include = "core" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^4.2"
+python-decouple = "^3.8"
+mkdocs = "^1.5"
+mkdocs-material = "^9.5"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.0"
