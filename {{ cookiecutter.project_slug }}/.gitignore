@@ -1,8 +1,44 @@
-
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.sqlite3
-.env
-*.log
-*.zip
+*$py.class
+
+# Virtual environments
 .venv/
+venv/
+ENV/
+env/
+
+# Poetry
+poetry.lock
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+static/
+
+# Django migrations
+**/migrations/
+!*/migrations/__init__.py
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# dotenv
+.env
+.env.*
+
+# mkdocs
+site/
