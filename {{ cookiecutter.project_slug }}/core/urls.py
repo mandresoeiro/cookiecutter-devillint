@@ -12,11 +12,11 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-path("admin/", admin.site.urls),
-path("filmes/", include("movies.urls", namespace="movies")),
+    path("admin/", admin.site.urls),
+    path("dashboard/", include("dashboard.urls", namespace="dashboard")),
 ]
 
 
 # Serve arquivos de mídia em dev
 if settings.DEBUG:
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
